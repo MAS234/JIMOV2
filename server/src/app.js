@@ -12,7 +12,7 @@ const app = express();
 // Middleware para parsear JSON
 app.use(express.json());
 
-//ROUTES DE PERFUMES
+//ROUTES
 app.use(perfumes);
 app.use(perfuminas);
 app.use(velas);
