@@ -3,13 +3,13 @@ import { initializeApp} from 'firebase/app';
 import { getFirestore, collection} from 'firebase/firestore';
 
 const firebaseConfig = {
-  apiKey: "AIzaSyAZV3itiD_6Z7cB-QD_xdO7QMD0YdhaSV0",
-  authDomain: "jimo-71e02.firebaseapp.com",
+  apiKey: process.env.apiKey,
+  authDomain: process.env.authDomain,
   projectId: "jimo-71e02",
-  storageBucket: "jimo-71e02.appspot.com",
-  messagingSenderId: "722795993824",
-  appId: "1:722795993824:web:2ac526c9409f82e5a0ce85",
-  measurementId: "G-WRNWHVPX5V"
+  storageBucket: process.env.storageBucket,
+  messagingSenderId: process.env.messagingSenderId,
+  appId: process.env.appId,
+  measurementId: process.env.measurementId
 };
 
 // Initialize Firebase
