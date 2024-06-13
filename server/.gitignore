@@ -1,2 +1,5 @@
-#env
-.env.local
+# Environment variables
+.env
+
+# Node Modules
+node_modules
