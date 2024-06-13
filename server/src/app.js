@@ -1,9 +1,15 @@
 import express from 'express';
-import routes from './routes/routes.info.js';
+import perfumes from './routes/perfumes/perfumes.routes.js';
+import perfuminas from './routes/perfuminas/perfuminas.routes.js';
 
 const app = express();
 
-app.use(routes);
+// Middleware para parsear JSON
+app.use(express.json());
+
+//ROUTES DE PERFUMES
+app.use(perfumes);
+app.use(perfuminas);
 
 app.listen(3001, () => {
     console.log('Servidor está ejecutándose en el puerto 3001');
