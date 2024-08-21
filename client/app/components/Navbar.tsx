@@ -12,24 +12,53 @@ export default function Navbar() {
 
   return (
     <>
-      <nav className="flex items-center justify-between p-3 w-full">
-        <div>
-          <img src="/logo.png" alt="logo" className=" md:w-28 md:h-28 w-20 h-16 " />
+      <nav className="flex items-center justify-between p-3 w-full sticky top-0 bg-white z-50">
+        <div className="flex items-center">
+          <img
+            src="/logo.png"
+            alt="logo"
+            className="md:w-28 md:h-28 w-20 h-16"
+          />
+          <h1
+            className="text-2xl sm:text-3xl md:text-3xl lg:text-4xl font-light md:mb-0 pompiere-regular text-black text-center md:hidden ml-4"
+          >
+            ISAROMAS
+          </h1>
         </div>
 
-        <div className={`flex flex-col items-center w-full md:w-auto `}>
-          <h1 className={`text-4xl font-light md:mb-0 pompiere-regular text-black text-center `}>ISAROMAS</h1>
-          <div className={`text-center md:flex md:flex-row mt-5  w-52 h-24 justify-center items-center gap-10  duration-300 ${isOpen ? "absolute top-[50px]" : " md:top-auto absolute top-[-500px] duration-300"}`}>
-            <TextNavbar title="Inicio" route="/" setIsOpen={setIsOpen}/>
-            <TextNavbar title="Tienda" route="/tienda" setIsOpen={setIsOpen}/>
-            <TextNavbar title="Contacto" route="/" setIsOpen={setIsOpen}/>
+        <div className={`flex flex-col items-center w-full md:w-auto`}>
+          <h1
+            className="hidden md:block text-2xl sm:text-3xl md:text-4xl lg:text-4xl font-light md:mb-0 pompiere-regular text-black text-center"
+          >
+            ISAROMAS
+          </h1>
+
+          <div
+            className={`text-center md:flex md:flex-row mt-5 w-full md:w-auto justify-center items-center gap-10 duration-300 bg-white rounded-lg ${
+              isOpen
+                ? "absolute top-[50px] left-0 right-0 md:relative md:top-0"
+                : "absolute top-[-500px] md:relative md:top-0"
+            }`}
+          >
+            <TextNavbar title="Inicio" route="/" setIsOpen={setIsOpen} />
+            <TextNavbar title="Tienda" route="/tienda" setIsOpen={setIsOpen} />
+            <TextNavbar title="Nosotros" route="/" setIsOpen={setIsOpen} />
           </div>
         </div>
 
-        <div className="flex items-center z-30">
-          <img src="/logo.png" alt="logo" className="w-28 h-28 hidden md:block" />
-          <button className="md:hidden ml-4" onClick={toggleMenu}>
-            <img src={isOpen ? "/close.svg" : "/open.svg"} alt="close/open" className="w-10 h-10 duration-300" />
+        <div className="hidden md:flex items-center z-30">
+          <button className="bg-black hover:bg-slate-600 duration-150 w-32 h-10 text-white rounded-lg shadow-md">
+            Contacto
+          </button>
+        </div>
+
+        <div className="md:hidden flex items-center z-30">
+          <button onClick={toggleMenu}>
+            <img
+              src={isOpen ? "/close.svg" : "/open.svg"}
+              alt="close/open"
+              className="w-10 h-10 duration-300"
+            />
           </button>
         </div>
       </nav>

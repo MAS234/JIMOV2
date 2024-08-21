@@ -1,5 +1,5 @@
 /* Tipografia */
-@import url('https://fonts.googleapis.com/css2?family=Pompiere&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -15,7 +15,7 @@
 
 
   .pompiere-regular {
-    font-family: "Pompiere";
+    font-family: "Raleway", sans-serif;
   }
   
 

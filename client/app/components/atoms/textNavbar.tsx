@@ -13,10 +13,9 @@ export default function TextNavbar({ title, route, setIsOpen }: Props) {
 
     const router = useRouter()
 
-
   return (
     <>
-      <p className="text-xl text-black font-light hover:text-gray-600 border-b hover:border-b hover:border-black duration-150 cursor-pointer pompiere-regular " onClick={() => {
+      <p className="text-xl text-black font-light hover:text-white duration-150 hover:bg-black cursor-pointer pompiere-regular h-10 m-auto text-center" onClick={() => {
         router.push(route),
         setIsOpen(false)
       }}>
