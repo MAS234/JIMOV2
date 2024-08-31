@@ -1,12 +1,10 @@
-import Portada from "./components/orgnisms/portada";
-import SectionInfo from "./components/orgnisms/sectionInfo";
+
 
 //Principal
 export default function Home() {
   return (
     <>
-      <Portada />
-      <SectionInfo />
+    <h1 className="text-center text-4xl">Nueva Pagina</h1>
     </>
   );
 }

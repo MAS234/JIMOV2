@@ -17,23 +17,4 @@
   .pompiere-regular {
     font-family: "Raleway", sans-serif;
   }
-  
-
-
-/* Asegúrate de incluir estas clases */
-.hidden {
-  display: none;
-}
-
-.block {
-  display: block;
-}
-
-.md\\:hidden {
-  display: none;
-}
-
-.md\\:block {
-  display: block;
-}
 
