@@ -1,10 +1,10 @@
-
+import Inicio from "./home/inicio";
 
 //Principal
 export default function Home() {
   return (
     <>
-    <h1 className="text-center text-4xl">Nueva Pagina</h1>
+    <Inicio/>
     </>
   );
 }
