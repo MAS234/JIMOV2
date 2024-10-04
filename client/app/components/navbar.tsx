@@ -1,6 +1,7 @@
 "use client"
 
 import React, { useState } from 'react';
+import Link from 'next/link';
 
 function Navbar() {
   // Estado para controlar el menú hamburguesa
@@ -13,7 +14,7 @@ function Navbar() {
 
   return (
     <>
-      <div className="sticky top-0 z-50 h-14 bg-red-500 flex justify-between items-center px-4 sm:px-8 lg:px-16">
+      <div className="bg-[#ed9dbe] sticky top-0 z-50 h-14 flex justify-between items-center px-4 sm:px-8 lg:px-16">
         {/* Logo */}
         <div>
           <h1 className="text-white text-lg font-bold">LOGO</h1>
@@ -22,14 +23,14 @@ function Navbar() {
         {/* Opciones de navegación */}
         <div className="hidden md:flex justify-center items-center gap-6 lg:gap-10 text-white text-sm">
           <p className="hover:text-gray-400 cursor-pointer">Nosotros</p>
-          <p className="hover:text-gray-400 cursor-pointer">Inicio</p>
+          <Link href="/" className="hover:text-gray-400 cursor-pointer">Inicio</Link>
           <p className="hover:text-gray-400 cursor-pointer">Contacto</p>
         </div>
 
         {/* Botón Tienda */}
         <div>
-          <div className="border border-white rounded-md">
-            <p className="text-white text-sm p-2 cursor-pointer hover:bg-white hover:text-gray-900 transition">Tienda</p>
+          <div className="border duration-150 hover:bg-[#d45d8f] border-white rounded-md">
+            <Link href="/tienda" className="text-white text-sm p-2 cursor-pointer  transition">Tienda</Link>
           </div>
         </div>
 
