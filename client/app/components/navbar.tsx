@@ -14,23 +14,23 @@ function Navbar() {
 
   return (
     <>
-      <div className="bg-[#ed9dbe] sticky top-0 z-50 h-14 flex justify-between items-center px-4 sm:px-8 lg:px-16">
+      <div className=" sticky top-0 z-50 h-14 flex justify-between items-center px-4 sm:px-8 lg:px-16 shadow-white shadow-sm font-podkova" style={{background: 'linear-gradient(to right, #D35C8D, #EE9EBF);'}}>
         {/* Logo */}
         <div>
           <h1 className="text-white text-lg font-bold">LOGO</h1>
         </div>
 
         {/* Opciones de navegación */}
-        <div className="hidden md:flex justify-center items-center gap-6 lg:gap-10 text-white text-sm">
-          <p className="hover:text-gray-400 cursor-pointer">Nosotros</p>
-          <Link href="/" className="hover:text-gray-400 cursor-pointer">Inicio</Link>
-          <p className="hover:text-gray-400 cursor-pointer">Contacto</p>
+        <div className="hidden md:flex  justify-center items-center gap-6 lg:gap-10 text-white text-lg">
+          <p className="hover:text-[#d45d8f] cursor-pointer">Nosotros</p>
+          <Link href="/" className="hover:text-[#d45d8f] cursor-pointer">Inicio</Link>
+          <p className="hover:text-[#d45d8f] cursor-pointer">Contacto</p>
         </div>
 
         {/* Botón Tienda */}
         <div>
           <div className="border duration-150 hover:bg-[#d45d8f] border-white rounded-md">
-            <Link href="/tienda" className="text-white text-sm p-2 cursor-pointer  transition">Tienda</Link>
+            <Link href="/tienda" className="text-white text-lg p-2 cursor-pointer  transition">Tienda</Link>
           </div>
         </div>
 
@@ -49,12 +49,12 @@ function Navbar() {
 
       {/* Menú móvil oculto/visible según el estado */}
       {isMenuOpen && (
-        <div className="absolute top-14 left-0 w-full bg-gray-900 text-white md:hidden">
+        <div className="absolute top-14 left-0 w-full bg-[#d45d8f] text-white md:hidden">
           <ul className="flex flex-col items-center gap-4 py-4">
-            <li className="hover:text-gray-400 cursor-pointer">Nosotros</li>
-            <li className="hover:text-gray-400 cursor-pointer">Inicio</li>
-            <li className="hover:text-gray-400 cursor-pointer">Contacto</li>
-            <li className="hover:text-gray-400 cursor-pointer border-t border-gray-700 pt-4 w-full text-center">Tienda</li>
+            <li className="hover:text-[#d45d8f] cursor-pointer">Nosotros</li>
+            <li className="hover:text-[#d45d8f] cursor-pointer">Inicio</li>
+            <li className="hover:text-[#d45d8f] cursor-pointer">Contacto</li>
+            <li className="hover:text-[#d45d8f] cursor-pointer border-t border-white pt-4 w-full text-center">Tienda</li>
           </ul>
         </div>
       )}

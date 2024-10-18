@@ -8,6 +8,11 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        agdasima: ['Agdasima', 'sans-serif'],
+        roboto: ['Roboto', 'sans-serif'],
+        podkova: ['Podkova', 'sans-serif'],
+      },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
