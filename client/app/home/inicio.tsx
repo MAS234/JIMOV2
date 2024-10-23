@@ -80,7 +80,7 @@ export default function Inicio() {
         {/* CARRUSEL */}
         <Carrusel/>
 
-        <div className="flex items-center justify-center w-full mt-36">
+        <div className="flex items-center justify-center w-full mt-5">
           <h1 className="text-4xl text-center m-5 ml-16 text-[#EA94B8] font-podkova flex items-center">
             ¡VENI Y DISFRUTA DE NUESTROS PRODUCTOS!
             <GiCandlebright className=" text-[#D35C8D]" />
